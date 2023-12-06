@@ -1,0 +1,11 @@
+// TodoListCard.scss
+.todo-item {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}

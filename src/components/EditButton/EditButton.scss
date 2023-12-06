@@ -1,0 +1,38 @@
+// EditButton.scss
+.edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2ecc71; // Green background color
+  color: #fff; // White text color
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle box shadow
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1em;
+  margin-left: auto;
+  &:hover {
+    background-color: #27ae60; // Darker green on hover
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Increased box shadow on hover
+  }
+
+  svg {
+    height: 30px;
+  }
+
+  svg * {
+    stroke: white;
+    opacity: 1;
+    stroke-width: 3;
+  }
+
+  .EditIcon {
+    margin-right: 8px;
+  }
+}

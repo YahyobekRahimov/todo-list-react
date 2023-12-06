@@ -1,0 +1,12 @@
+#TaskTitle {
+  font-size: 40px;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  opacity: 1;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}

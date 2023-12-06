@@ -1,0 +1,59 @@
+// FancyCheckbox.scss
+.FancyCheckbox {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.CheckboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.CheckboxLabel {
+  position: relative;
+  padding-left: 50px;
+  font-size: 40px;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3498db;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  &:hover:before {
+    background: linear-gradient(45deg, #2980b9, #27ae60);
+  }
+
+  &:after {
+    content: "\1F5F8"; // Unicode checkmark
+    position: absolute;
+    left: 4px;
+    top: -8px;
+    font-size: 45px;
+    color: #ffffff;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .CheckboxInput:checked + &:before {
+    background: linear-gradient(45deg, #2980b9, #27ae60);
+    border-color: #2980b9;
+  }
+
+  .CheckboxInput:checked + &:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,34 @@
+// DeleteButton.scss
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: #e74c3c; // Red background color, you can change it to your preference
+  color: #fff; // White text color
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle box shadow
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1em;
+  & * {
+    pointer-events: none;
+  }
+  svg {
+    height: 30px;
+  }
+  svg * {
+    stroke: white;
+    opacity: 1;
+    stroke-width: 3;
+  }
+  &:hover {
+    background-color: #c0392b; // Darker red on hover
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Increased box shadow on hover
+  }
+}

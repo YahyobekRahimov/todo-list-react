@@ -1,0 +1,22 @@
+// AddButton.scss
+.AddButton {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: #ffffff;
+
+  &:hover {
+    background: linear-gradient(45deg, #2980b9, #27ae60);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
