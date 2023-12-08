@@ -19,18 +19,20 @@ function App() {
   }
   function getNewMappedItems(data) {
     return data.map(element => {
-      console.log(element.id);
       return (<TodoCard 
     editing='false' 
     key={element.id} 
     id={element.id}
-    title={element.title} 
+    title={element.title}
+    handleDeleteClick={handleDeleteClick}
     />)
   })
 }
   function handleDeleteClick(id) {
-    data.forEach((element, index) => {
-      if (element.id == id) {
+    console.log('working');
+    console.log(id);
+    data.forEach((el, index) => {
+      if (el.id === id) {
         data.splice(index, 1);
         setData(data);
         setMappedItems(getNewMappedItems(data));
